@@ -3,7 +3,7 @@ name: Deploy to GitHub Pages
 on:
   push:
     branches:
-      - main  
+      - main  # main 브랜치에 푸시될 때마다 트리거
 
 jobs:
   build:
@@ -16,13 +16,18 @@ jobs:
     - name: Set up Node.js
       uses: actions/setup-node@v3
       with:
-        node-version: '18.20.2'  
+        node-version: '18.20.2' 
 
     - name: Install dependencies
       run: npm install
 
     - name: Build the project
       run: npm run build
+
+    - name: Configure Git user
+      run: |
+        git config --global user.name "green-study"
+        git config --global user.email "soo010410@naver.com"
 
     - name: Deploy to GitHub Pages
       run: npm run deploy

@@ -1,0 +1,33 @@
+.header {
+    width: 100%;
+}
+
+.Title-margin-1 {
+    height: 80px;
+}
+
+.Title-margin-2 {
+    height: 90px;
+}
+
+.Title p {
+    text-align: left;
+    color: white;
+    font-size: 24px;
+    font-weight: 500;
+    letter-spacing: 1.5px;
+    margin-bottom: -2px;
+}
+
+hr {
+    width: 100%;
+    border-top: 2px solid #ffffff;
+}
+
+.Name p {
+    text-align: left;
+    color: white;
+    font-size: 42px;
+    font-weight: 500;
+    letter-spacing: 1px;
+}

@@ -3,10 +3,5 @@
   min-height: 100vh;
   display: flex;
   justify-content: center;
-  background: linear-gradient(to bottom, #2c3e50 40%, #16a085 40%);
-}
-
-.Main-content{
-  width: 80%;
-  height: 100%;
+  background: #16a085;
 }

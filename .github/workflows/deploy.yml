@@ -24,6 +24,12 @@ jobs:
     - name: Build the project
       run: npm run build
 
+    - name: Configure Git user
+      run: |
+        git config --global user.name "green-study"
+        git config --global user.email "soo010410@naver.com"
+        git config --global url.https://${{ secrets.GH_TOKEN }}@github.com/.insteadOf https://github.com/
+
     - name: Deploy to GitHub Pages
       run: npm run deploy
       env:

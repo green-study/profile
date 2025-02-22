@@ -1,0 +1,124 @@
+/* src/styles/ProjectCard.css */
+.project-card {
+  display: flex;
+  background: rgb(221, 228, 217);
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  transition: transform 0.3s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+}
+
+.project-card-image img {
+  display: flex;
+  width: 120px;
+  height: 80px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.project-card-link {
+  margin-top: 10px;
+  background-color: #e4c58c; 
+  padding: 4px 16px; 
+  border-radius: 12px; 
+  display: inline-block; 
+  transition: background-color 0.3s ease; 
+}
+
+.project-card-link:hover {
+  background-color: #e0b360; 
+}
+
+.project-card-link a{
+  font-size: 13px;
+  color: white; 
+  text-decoration: none; 
+}
+
+.project-card-content {
+  margin-left: 16px;
+  flex: 1;
+}
+
+.project-card-content h3 {
+  margin: 0;
+}
+
+.project-card-content a {
+  display: inline-block;
+  margin-top: 8px;
+  padding: 8px 16px;
+  background-color: #61dafb;
+  color: black;
+  text-decoration: none;
+  border-radius: 4px;
+}
+
+.project-card-content a:hover {
+  background-color: #4fa3e7;
+}
+
+.language-icons {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  margin: 10px 0;
+}
+
+.icon {
+  display: flex;
+  gap: 8px;
+}
+
+.icon-wrapper {
+  width: 30px;  
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: white; 
+  border-radius: 50%; 
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+  font-size: 20px; 
+}
+
+.html { color: #E44D26; }
+.css { color: #1572B6; }
+.js { color: #F7DF1E; }
+.ts { color: #3178C6; }
+.react { color: #61DAFB; }
+.node { color: #68A063; }
+.java { color: #007396; }
+.springboot { color: #6DB33F; }
+.python { color: #3776AB; }
+.go { color: #00ADD8; }
+.rust { color: #DEA584; }
+.swift { color: #FA7343; }
+.raspberrypi { color: #A22846; }
+.cpp { color: #00599C; }          
+.dart { color: #00B4A0; }         
+.flutter { color: #02569B; }
+
+/* src/styles/ProjectList.css */
+.project-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); 
+  gap: 20px;
+  padding: 20px;
+}
+
+@media (max-width: 900px) {
+  .project-list {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .project-list {
+    grid-template-columns: 1fr;
+  }
+}

@@ -1,5 +1,12 @@
-.content_container {
-    font-size: 30px;
+.content {
+    width:80%;
+    align-items: center;
+    margin: auto;
+    margin-top: 50px;
+}
+
+.project-title {
+    text-align: left;
+    font-size: 24px;
     font-weight: 500;
-    color: white;
 }

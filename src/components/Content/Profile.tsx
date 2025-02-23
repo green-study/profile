@@ -38,7 +38,7 @@ const Profile: React.FC = () => {
 
         <div className="profile-education">
           <p>
-            <FaUniversity className="icon" /> Chungnam National University: The Division of Computer Convergence
+            <FaUniversity className="icon" /> Chungnam National University: The Division of Computer Convergence (2020.3 ~ 2024.2)
           </p>
           <p>GPA: 4.5/4.5</p>
         </div>

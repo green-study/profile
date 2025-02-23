@@ -1,12 +1,30 @@
 .content {
-    width:80%;
+    max-width: 80%;
     align-items: center;
     margin: auto;
-    margin-top: 50px;
+    overflow-x: hidden; 
 }
 
-.project-title {
+.field-title {
     text-align: left;
     font-size: 24px;
     font-weight: 500;
+    margin-left: 10px;
+}
+
+.profile-field,
+.project-field,
+.publications-certifications-field
+ {
+    margin-top: 50px;
+    background: rgb(255, 255, 255);
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    max-width: 100%;
+    overflow: hidden;
+}
+
+.footer {
+    height: 50px;
 }

@@ -1,0 +1,210 @@
+.profile-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    background: rgb(221, 228, 217);
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    max-width: 100%;
+    overflow: hidden;
+    margin-bottom: 50px;
+}
+
+.profile-container h2,
+.profile-container h3,
+.profile-container p {
+    text-align: left;
+}
+
+.profile-image {
+    flex: 1;
+    max-width: 350px;
+    min-width: 200px;
+}
+
+.profile-image p {
+    text-align: center;
+}
+
+.profile-image img {
+    width: 100%;
+    max-width: 350px;
+    height: auto;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #ddd;
+}
+
+.profile-description {
+    text-align: center;
+}
+
+.profile-description.name {
+    font-size: 24px;
+    font-weight: 600;
+    color: #333;
+    margin-top: 20px;
+}
+
+.profile-description {
+    font-size: 16px;
+    color: #555;
+    margin-top: 5px;
+}
+
+.profile-info {
+    flex: 2;
+    min-width: 250px;
+    padding-left: 20px;
+}
+
+.profile-info h2 {
+    font-size: 28px;
+    font-weight: 600;
+    margin-bottom: 15px;
+    color: #333;
+}
+
+.profile-skills {
+    display: flex;
+    flex-direction: column; 
+}
+
+.profile-links a {
+    text-decoration: none;
+    color:#4050df;
+}
+
+.profile-links p,
+.profile-education p,
+.profile-skills p,
+.profile-experience p {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin: 10px 0;
+    font-size: 16px;
+    color: #555;
+}
+
+.profile-container .icon {
+    color: #333;
+    font-size: 16px;
+    width: 16px;  
+    height: 16px;
+    min-width: 16px;
+    min-height: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white; 
+    border-radius: 50%; 
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+    padding: 4px;
+    margin-right: -5px;
+}
+
+.profile-container .icon-linkedin,
+.profile-container .icon-email {
+color: #0077b5; 
+}
+
+.profile-container .icon-react { color: #61DBFB; }
+.profile-container .icon-javascript { color: #F7DF1E; }
+.profile-container .icon-typescript { color: #007ACC; }
+.profile-container .icon-html5 { color: #E34F26; }
+.profile-container .icon-css3 { color: #1572B6; }
+.profile-container .icon-python { color: #3776AB; }
+.profile-container .icon-java { color: #007396; }
+.profile-container .icon-cplusplus { color: #00599C; }
+
+
+.profile-experience {
+    border-top: 2px solid #ddd;
+    margin-top: 20px;
+    padding-top: 20px;
+}
+
+.profile-experience h3 {
+    font-size: 22px;
+    font-weight: 500;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.experience-timeline {
+    position: relative;
+    margin-top: 20px;
+}
+
+.experience-timeline div {
+    display: flex;
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.experience-timeline div::before {
+    content: "";
+    position: absolute;
+    left: 50%;
+    top: 0;
+    height: 100%;
+    width: 2px;
+    background-color: #333;
+    z-index: -1;
+}
+
+.experience-timeline div .experience-dot {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: #2c3e50;
+    border: 3px solid white;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.experience-timeline div .experience-info {
+    margin-left: 60px;
+}
+
+@media (max-width: 768px) {
+    .profile-container {
+      display: block;
+      text-align: center;
+    }
+  
+    .profile-image {
+      margin: 0 auto;
+    }
+  
+    .profile-info {
+      text-align: left;
+      margin-top: 20px;
+    }
+  
+    .profile-links p,
+    .profile-education p,
+    .profile-skills p,
+    .profile-experience p {
+      text-align: left;
+      margin: 5px 0;
+    }
+
+    .profile-container .icon {
+      font-size: 18px;
+    }
+  }
+
+@media (max-width: 350px) {
+    .profile-container {
+      padding: 10px;
+    }
+  
+    .profile-image img {
+      max-width: 200px;
+    }
+}

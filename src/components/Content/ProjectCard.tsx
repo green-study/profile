@@ -2,7 +2,7 @@ import { FaHtml5, FaCss3Alt, FaJs, FaReact, FaNodeJs, FaJava, FaRaspberryPi } fr
 import { SiOracle, SiTypescript, SiPython, SiGo, SiRust, SiSwift, SiSpringboot, SiDart, SiFlutter, SiCplusplus } from "react-icons/si";
 
 import "./Project.css"
-import { BlockquoteHTMLAttributes, JSX } from "react";
+import { JSX } from "react";
 
 const languageIcons: Record<string, JSX.Element> = {
   HTML: <FaHtml5 key="html" className="icon html" />,

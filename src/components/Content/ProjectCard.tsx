@@ -1,8 +1,8 @@
 import { FaHtml5, FaCss3Alt, FaJs, FaReact, FaNodeJs, FaJava, FaRaspberryPi } from "react-icons/fa";
-import { SiTypescript, SiPython, SiGo, SiRust, SiSwift, SiSpringboot, SiDart, SiFlutter, SiCplusplus } from "react-icons/si";
+import { SiOracle, SiTypescript, SiPython, SiGo, SiRust, SiSwift, SiSpringboot, SiDart, SiFlutter, SiCplusplus } from "react-icons/si";
 
 import "./Project.css"
-import { JSX } from "react";
+import { BlockquoteHTMLAttributes, JSX } from "react";
 
 const languageIcons: Record<string, JSX.Element> = {
   HTML: <FaHtml5 key="html" className="icon html" />,
@@ -20,7 +20,8 @@ const languageIcons: Record<string, JSX.Element> = {
   RaspberryPi: <FaRaspberryPi key="raspberrypi" className="icon raspberrypi" />,
   CPlusPlus: <SiCplusplus key="cpp" className="icon cpp" />,
   Dart: <SiDart key="dart" className="icon dart" />,
-  Flutter: <SiFlutter key="flutter" className="icon flutter" />
+  Flutter: <SiFlutter key="flutter" className="icon flutter" />,
+  Oracle: <SiOracle key="oracle" className="icon oracle" />
 };
 
 
@@ -30,16 +31,19 @@ interface ProjectCardProps {
   languages: string[];
   link: string;
   contribution: string;
+  hideLink: boolean;
 }
 
-const ProjectCard: React.FC<ProjectCardProps> = ({ imageUrl, projectName, languages, link, contribution }) => {
+const ProjectCard: React.FC<ProjectCardProps> = ({ imageUrl, projectName, languages, link, contribution, hideLink }) => {
   return (
     <div className="project-card">
       <div className="project-card-image">
         <img src={imageUrl} alt={projectName} />
-        <div className="project-card-link">
-          <a href={link} target="_blank" rel="noopener noreferrer">View Project</a>
-        </div>
+        {!hideLink && (
+          <div className="project-card-link">
+            <a href={link} target="_blank" rel="noopener noreferrer">View Project</a>
+          </div>
+        )}
       </div>
       <div className="project-card-content">
         <h3>{projectName}</h3>

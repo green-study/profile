@@ -1,7 +1,19 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+}
+
 .App {
   text-align: center;
   min-height: 100vh;
   display: flex;
   justify-content: center;
+  align-items: center; 
   background: #16a085;
+}
+
+.Main-content {
+  width: 100%; 
 }

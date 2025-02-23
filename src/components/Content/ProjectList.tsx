@@ -6,6 +6,7 @@ interface Project {
   languages: string[];
   link: string;
   contribution: string;
+  hideLink: boolean;
 }
 
 interface ProjectListProps {
@@ -23,6 +24,7 @@ const ProjectList: React.FC<ProjectListProps> = ({ projects }) => {
           languages={project.languages}
           link={project.link}
           contribution={project.contribution}
+          hideLink={project.hideLink}
         />
       ))}
     </div>

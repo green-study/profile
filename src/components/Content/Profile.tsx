@@ -8,9 +8,9 @@ const Profile: React.FC = () => {
     <div className="profile-container">
       <div className="profile-image">
         <img src="photo.png" alt="Profile" />
-        <p className="profile-description name">Subin Kim</p>
+        <p className="profile-description name">김수빈</p>
         <p className="profile-description">Front-end Developer</p>
-        <p className="profile-description">Passionate about UI/UX & Software Engineering</p>
+        {/* <p className="profile-description">Passionate about UI/UX & Software Engineering</p> */}
       </div>
 
       <div className="profile-info">
@@ -23,7 +23,7 @@ const Profile: React.FC = () => {
             <a href="mailto:soo010410@gmail.com">soo010410@gmail.com</a>
           </p>
           <p>
-            <FaGithub className="icon" /> GitHub:{" "}
+            <FaGithub className="icon" /> Github:{" "}
             <a href="https://github.com/green-study" target="_blank" rel="noopener noreferrer">
               github.com/green-study
             </a>
@@ -38,7 +38,7 @@ const Profile: React.FC = () => {
 
         <div className="profile-education">
           <p>
-            <FaUniversity className="icon" /> Chungnam National University: The Division of Computer Convergence (2020.3 ~ 2024.2)
+            <FaUniversity className="icon" /> 충남대학교: 컴퓨터융합학부 (2020.3 ~ 2024.2)
           </p>
           <p>GPA: 4.5/4.5</p>
         </div>
@@ -64,21 +64,21 @@ const Profile: React.FC = () => {
 
         <div className="profile-experience">
           <h3>Experience</h3>
-          <p><strong>Robolink</strong> - Software Engineer</p>
-          <p>(2024.11 ~) - Remote Full-time Software Engineer</p>
-          <p>(2023.11 ~ 2024.10) - Onsite Intern in San Diego</p>
-          <p>(2023.05 ~ 2023.11) - Remote Intern</p>
+          <p><strong>Robolink</strong> - San Diego, USA</p>
+          <p>(2024.11 ~ ing) - Junior Software Engineer (한국 원격 근무)</p>
+          <p>(2023.11 ~ 2024.10) - Software Intern (미국 현지 근무)</p>
+          <p>(2023.05 ~ 2023.11) - Software Intern (한국 원격 근무)</p>
 
-          <p><strong>Chungnam National University</strong></p>
-          <p>(2023.08 - 2023.08) - Python basic training tutor for professors</p>
-          <p>(2023.06 - 2023.07) - Computer science thinking class tutor</p>
-          <p>(2023.03 - 2023.06) - Programming language introduction class tutor</p>
+          <p><strong>충남대학교</strong> - 대전광역시, 한국</p>
+          <p>(2023.08 - 2023.08) - 인문대 교수님 대상 Python 기초 수업 튜터</p>
+          <p>(2023.06 - 2023.07) - 컴퓨터 과학적 사고 수업 튜터</p>
+          <p>(2023.03 - 2023.06) - 프로그래밍 언어 개론 수업 튜터</p>
 
-          <p><strong>λNTS</strong> - Undergraduate Researcher</p>
-          <p>(2022.08 - 2023.06) - Static Analysis, Programming Languages</p>
+          <p><strong>λNTS</strong> - 대전광역시, 한국</p>
+          <p>(2022.08 - 2023.06) - 학부 연구생으로 프로그래밍 언어 개론, 정적 분석에 대한 연구 진행</p>
 
-          <p><strong>Purdue University</strong> - K-SW Winter Program</p>
-          <p>(2023.01 - 2023.02) - Developed IoT system</p>
+          <p><strong>Purdue University</strong> - West Lafayette, USA</p>
+          <p>(2023.01 - 2023.02) - IoT 제품 개발 및 논문 작성 (K-SW Winter Program)</p>
         </div>
       </div>
     </div>

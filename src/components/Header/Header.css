@@ -7,17 +7,16 @@
 .Title-container {
     max-width: 100%;
     margin: 0 auto; 
-    padding-bottom: 10px;
     padding-left: 10%;
     padding-right: 10%;
 }
 
 .Title-margin-1 {
-    height: 80px;
+    height: 20px;
 }
 
 .Title-margin-2 {
-    height: 90px;
+    height: 40px;
 }
 
 .Title p {

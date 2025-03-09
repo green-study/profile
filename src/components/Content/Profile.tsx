@@ -75,10 +75,10 @@ const Profile: React.FC = () => {
           <p>(2023.03 - 2023.06) - 프로그래밍 언어 개론 수업 튜터</p>
 
           <p><strong>λNTS</strong> - 대전광역시, 한국</p>
-          <p>(2022.08 - 2023.06) - 학부 연구생으로 프로그래밍 언어 개론, 정적 분석에 대한 연구 진행</p>
+          <p>(2022.08 - 2023.06) - 학부 연구생, 정적 분석에 대한 연구 진행</p>
 
           <p><strong>Purdue University</strong> - West Lafayette, USA</p>
-          <p>(2023.01 - 2023.02) - IoT 제품 개발 및 논문 작성 (K-SW Winter Program)</p>
+          <p>(2023.01 - 2023.02) - K-SW Winter Program, IoT 제품 개발 및 논문 작성</p>
         </div>
       </div>
     </div>

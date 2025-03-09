@@ -28,25 +28,40 @@ const languageIcons: Record<string, JSX.Element> = {
 interface ProjectCardProps {
   imageUrl: string;
   projectName: string;
+  date: String;
   languages: string[];
-  link: string;
-  contribution: string;
-  hideLink: boolean;
+  link1: string;
+  link2: string;
+  contribution: string[];
+  hideLink1: boolean;
+  buttonText1: string;
+  hideLink2: boolean;
+  buttonText2: string;
 }
 
-const ProjectCard: React.FC<ProjectCardProps> = ({ imageUrl, projectName, languages, link, contribution, hideLink }) => {
+const ProjectCard: React.FC<ProjectCardProps> = ({ imageUrl, projectName, date, languages, link1, link2, contribution, hideLink1, buttonText1, hideLink2, buttonText2 }) => {
   return (
     <div className="project-card">
       <div className="project-card-image">
         <img src={imageUrl} alt={projectName} />
-        {!hideLink && (
-          <div className="project-card-link">
-            <a href={link} target="_blank" rel="noopener noreferrer">View Project</a>
-          </div>
-        )}
+        <div className="project-card-button">
+          {!hideLink1 && (
+            <div className="project-card-link">
+              🔗<a href={link1} target="_blank" rel="noopener noreferrer">{buttonText1}</a>
+            </div>
+          )}
+          {!hideLink2 && (
+            <div className="project-card-link">
+              🔗<a href={link2} target="_blank" rel="noopener noreferrer">{buttonText2}</a>
+            </div>
+          )}
+        </div>
       </div>
       <div className="project-card-content">
         <h3>{projectName}</h3>
+        <div className="project-date">
+          <p>{date}</p>
+        </div>
         <div className="language-icons">
           {languages.map((lang) => (
             <div key={lang} className="icon-wrapper">
@@ -54,7 +69,11 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ imageUrl, projectName, langua
             </div>
           ))}
         </div>
-        <p>{contribution}</p>
+        <div className="contribution-texts">
+          {contribution.map((item, index) => (
+            <p key={index}>• {item}</p>
+          ))}
+        </div>
       </div>
     </div>
   );

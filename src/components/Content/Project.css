@@ -6,10 +6,17 @@
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   padding: 20px;
   transition: transform 0.3s ease;
+  text-align: left;
 }
 
 .project-card:hover {
   transform: translateY(-5px);
+}
+
+.project-date p {
+  font-size: 14px;
+  margin-top: 2px;
+  color: #555555;
 }
 
 .project-card-image img {
@@ -20,32 +27,42 @@
   border-radius: 8px;
 }
 
-.project-card-link {
+.project-card-button {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
   margin-top: 10px;
-  background-color: #e4c58c; 
+  gap: 2px;
+}
+
+.project-card-link {
+  background-color: rgb(241, 241, 238); 
   padding: 4px 16px; 
   border-radius: 12px; 
   display: inline-block; 
   transition: background-color 0.3s ease; 
+  border: solid 1px #555555;
 }
 
 .project-card-link:hover {
-  background-color: #e0b360; 
+  background-color: rgb(255, 255, 255); 
 }
 
 .project-card-link a{
   font-size: 13px;
-  color: white; 
+  color: #4050df;
   text-decoration: none; 
 }
 
 .project-card-content {
-  margin-left: 16px;
+  margin-left: 30px;
   flex: 1;
 }
 
 .project-card-content h3 {
   margin: 0;
+  font-weight: 600;
+  font-size: 17px;
 }
 
 .project-card-content a {
@@ -62,11 +79,14 @@
   background-color: #4fa3e7;
 }
 
+.contribution-texts p{
+  margin-top: -10px;
+}
+
 .language-icons {
   display: flex;
   gap: 10px;
-  justify-content: center;
-  margin: 10px 0;
+  margin: 10px 0 22px 0;
 }
 
 .icon {
@@ -106,15 +126,8 @@
 /* src/styles/ProjectList.css */
 .project-list {
   display: grid;
-  grid-template-columns: repeat(3, minmax(300px, 1fr)); 
+  grid-template-columns: repeat(2, minmax(300px, 1fr)); 
   gap: 20px;
-  padding: 20px;
-}
-
-@media (max-width: 1515px) {
-  .project-list {
-    grid-template-columns: repeat(2, 1fr);
-  }
 }
 
 @media (max-width: 950px) {

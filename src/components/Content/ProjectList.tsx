@@ -3,10 +3,15 @@ import ProjectCard from './ProjectCard';
 interface Project {
   imageUrl: string;
   projectName: string;
+  date: String;
   languages: string[];
-  link: string;
-  contribution: string;
-  hideLink: boolean;
+  link1: string;
+  link2: string;
+  contribution: string[];
+  hideLink1: boolean;
+  buttonText1: string;
+  hideLink2: boolean;
+  buttonText2: string;
 }
 
 interface ProjectListProps {
@@ -21,10 +26,15 @@ const ProjectList: React.FC<ProjectListProps> = ({ projects }) => {
           key={index}
           imageUrl={project.imageUrl}
           projectName={project.projectName}
+          date={project.date}
           languages={project.languages}
-          link={project.link}
+          link1={project.link1}
+          link2={project.link2}
           contribution={project.contribution}
-          hideLink={project.hideLink}
+          hideLink1={project.hideLink1}
+          buttonText1={project.buttonText1}
+          hideLink2={project.hideLink2}
+          buttonText2={project.buttonText2}
         />
       ))}
     </div>

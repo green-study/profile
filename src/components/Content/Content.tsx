@@ -83,6 +83,19 @@ const projects = [
         buttonText2: ''
     },
     {
+        imageUrl: 'disabled.png',
+        projectName: '장애인 웹 접근성 체험 웹',
+        date: '2022년 11월 ~ 2022년 12월',
+        languages: ['HTML', 'JavaScript', 'CSS', 'Firebase'],
+        link1: 'https://github.com/solitarySALMON/SALMON',
+        link2: '',
+        contribution: ['운동능력 장애, 저시력 장애의 웹 접근성 체험 페이지 구현', '로그인, 회원가입 및 체험 후기 기능을 firebase와 연동하여 구현', '팀 리더로 프로젝트 파트 분배 및 검수까지 전체적인 과정을 주도'],
+        hideLink1: false,
+        buttonText1: '소스코드',
+        hideLink2: true,
+        buttonText2: ''
+    },
+    {
         imageUrl: 'reink_project.png',
         projectName: 'Re:ink',
         date: '2022년 1월',

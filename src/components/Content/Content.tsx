@@ -63,7 +63,7 @@ const projects = [
         languages: ['CPlusPlus', 'Java'],
         link1: 'https://github.com/green-study/JNIwiz',
         link2: 'https://www.youtube.com/watch?v=5UxNxQATbB4',
-        contribution: ['Java와 C/C++ 간의 상호작용 오류를 감지하는 JNI Header 파일 자동 제작 연구','정적 분석을 통해 프로그램에 맟줘 JNI header 파일을 자동 제작하도록 구현', 'JNI header 파일이 Java와 C/C++ 간의 전송 정보 오류를 감지하도록 지원', 'LLVM 및 FlowDroid와 같은 정적 분석 도구를 활용'],
+        contribution: ['Java와 C/C++ 간의 상호작용 오류를 감지하는 JNI Header 파일 자동 제작 연구','정적 분석을 통해 프로그램에 맟줘 JNI header 파일을 자동 제작하도록 구현', 'JNI header 파일이 Java와 C/C++ 간의 전송 정보 오류를 감지하도록 지원', 'LLVM 및 WALA와 같은 정적 분석 도구를 활용'],
         hideLink1: false,
         buttonText1: '소스코드',
         hideLink2: false,

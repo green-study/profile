@@ -24,7 +24,7 @@ const projects = [
         languages: ['React', 'JavaScript', 'CSS'],
         link1: 'https://codrone.robolink.com/edu/blockly/',
         link2: '',
-        contribution: ['Google Blockly 기반의 코딩 학습 웹 Front-end UI/UX 개발','기존 프로젝트의 Bug 수정 및 새로운 Feature 구현으로 지속적인 Release 관리 담당','Blockly 사이트와 Pyhon, Docs 사이트 간 데이터 전송 기능을 개발','각 요소를 컴포넌트 단위로 분리하여 유지보수성과 관리 효율성 향상'],
+        contribution: ['Google Blockly 기반의 코딩 학습 웹 Front-end UI/UX 개발','기존 프로젝트의 Bug 수정 및 새로운 Feature 구현으로 지속적인 Release 관리 담당','Blockly 사이트와 Python, Docs 사이트 간 데이터 전송 기능을 개발','각 요소를 컴포넌트 단위로 분리하여 유지보수성과 관리 효율성 향상'],
         hideLink1: false,
         buttonText1: '웹사이트',
         hideLink2: true,

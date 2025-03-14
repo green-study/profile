@@ -19,7 +19,7 @@ const Profile: React.FC = () => {
         <div className="profile-links">
           <p>
             <FaEnvelope className="icon icon-email" /> Email:{" "}
-            <a href="mailto:soo010410@naver.com">soo010410@naver.com</a> or{" "}
+            <a href="mailto:soo010410@naver.com">soo010410@naver.com</a> |
             <a href="mailto:soo010410@gmail.com">soo010410@gmail.com</a>
           </p>
           <p>

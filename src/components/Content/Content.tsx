@@ -57,6 +57,19 @@ const projects = [
         buttonText2: ''
     },
     {
+        imageUrl: 'Zumi.png',
+        projectName: 'Robolink Zumi',
+        date: '2023년 7월 ~ 2023년 8월',
+        languages: ['React', 'JavaScript', 'CSS'],
+        link1: 'https://pypi.org/project/zumidashboard/#history',
+        link2: '',
+        contribution: ['Zumi v2.92 개발 및 PYPI 배포', 'Zumi Blockly 한국어 번역 기능 구현', '불필요한 UI/UX 제거 및 bug 수정'],
+        hideLink1: false,
+        buttonText1: 'PYPI',
+        hideLink2: true,
+        buttonText2: ''
+    },
+    {
         imageUrl: 'JNI_project.png',
         projectName: 'JNIwiz: JNI header file automatic generation program that prevents C/C++ code call errors through static analysis of JAVA code',
         date: '2022년 7월 ~ 2023년 5월',

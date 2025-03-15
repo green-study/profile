@@ -44,6 +44,19 @@ const projects = [
         buttonText2: ''
     },
     {
+        imageUrl: 'Zumi.png',
+        projectName: 'Robolink Zumi',
+        date: '2024년 7월 ~ 2024년 8월',
+        languages: ['React', 'JavaScript', 'CSS'],
+        link1: 'https://pypi.org/project/zumidashboard/#history',
+        link2: '',
+        contribution: ['Zumi v2.92 개발 및 PYPI 배포', 'Zumi Blockly 한국어 번역 기능 구현', '불필요한 UI/UX 제거 및 bug 수정'],
+        hideLink1: false,
+        buttonText1: 'PYPI',
+        hideLink2: true,
+        buttonText2: ''
+    },
+    {
         imageUrl: 'scoreboard_project.png',
         projectName: 'Robolink Scoreboard',
         date: '2024년 2월',
@@ -53,19 +66,6 @@ const projects = [
         contribution: ['Spring Boot 기반의 점수판 Full Stack 개발', '상위권 점수 하이라이팅 기능 구현', '모든 참여자의 점수를 스크롤링 방식으로 지속적으로 표시하도록 구현','관리자 페이지에서 점수 추가, 수정, 삭제 기능 구현'],
         hideLink1: true,
         buttonText1: '',
-        hideLink2: true,
-        buttonText2: ''
-    },
-    {
-        imageUrl: 'Zumi.png',
-        projectName: 'Robolink Zumi',
-        date: '2023년 7월 ~ 2023년 8월',
-        languages: ['React', 'JavaScript', 'CSS'],
-        link1: 'https://pypi.org/project/zumidashboard/#history',
-        link2: '',
-        contribution: ['Zumi v2.92 개발 및 PYPI 배포', 'Zumi Blockly 한국어 번역 기능 구현', '불필요한 UI/UX 제거 및 bug 수정'],
-        hideLink1: false,
-        buttonText1: 'PYPI',
         hideLink2: true,
         buttonText2: ''
     },

@@ -1,6 +1,6 @@
 import React from "react";
 import { FaEnvelope, FaGithub, FaUniversity, FaCode, FaLinkedin, FaJava } from "react-icons/fa";
-import { SiOracle, SiEclipseide, SiIntellijidea, SiGit, SiLinux, SiReact, SiJavascript, SiTypescript, SiSpringboot, SiPython, SiCplusplus, SiHtml5, SiCss3} from "react-icons/si";
+import { SiEclipseide, SiIntellijidea, SiGit, SiLinux, SiReact, SiJavascript, SiTypescript, SiSpringboot, SiPython, SiCplusplus, SiHtml5, SiCss} from "react-icons/si";
 import "./profile.css";
 
 const Profile: React.FC = () => {
@@ -47,14 +47,14 @@ const Profile: React.FC = () => {
           <h3>Programming Languages</h3>
           <p>
             <SiReact className="icon icon-react" /> React, <SiJavascript className="icon icon-javascript" /> JavaScript, <SiTypescript className="icon icon-typescript" /> TypeScript,
-            <SiHtml5 className="icon icon-html5" /> HTML, <SiCss3 className="icon icon-css3" /> CSS, <FaJava className="icon icon-java" /> Java, <SiSpringboot className="icon" /> Spring Boot, 
+            <SiHtml5 className="icon icon-html5" /> HTML, <SiCss className="icon icon-css3" /> CSS, <FaJava className="icon icon-java" /> Java, <SiSpringboot className="icon" /> Spring Boot, 
             <SiPython className="icon icon-python" /> Python, <SiCplusplus className="icon icon-cplusplus" /> C++
           </p>
 
           <h3>Other Tools</h3>
           <p>
             <FaCode className="icon" /> VSCode,
-            <SiOracle className="icon" /> OracleDB,
+            <div className="icon" /> OracleDB,
             <SiEclipseide className="icon" /> Eclipse,
             <SiIntellijidea className="icon" /> IntelliJ,
             <SiGit className="icon" /> Git,

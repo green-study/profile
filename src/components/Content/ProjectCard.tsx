@@ -1,6 +1,5 @@
 import { FaHtml5, FaCss3Alt, FaJs, FaReact, FaNodeJs, FaJava, FaRaspberryPi } from "react-icons/fa";
-import { SiFirebase, SiOracle, SiTypescript, SiPython, SiGo, SiRust, SiSwift, SiSpringboot, SiDart, SiFlutter, SiCplusplus } from "react-icons/si";
-
+import { SiFirebase, SiTypescript, SiPython, SiGo, SiRust, SiSwift, SiSpringboot, SiDart, SiFlutter, SiCplusplus } from "react-icons/si";
 import "./Project.css"
 import { JSX } from "react";
 
@@ -21,7 +20,7 @@ const languageIcons: Record<string, JSX.Element> = {
   CPlusPlus: <SiCplusplus key="cpp" className="icon cpp" />,
   Dart: <SiDart key="dart" className="icon dart" />,
   Flutter: <SiFlutter key="flutter" className="icon flutter" />,
-  Oracle: <SiOracle key="oracle" className="icon oracle" />,
+  Oracle: <div key="oracle" className="icon oracle" />,
   Firebase: <SiFirebase key="firebase" className="icon firebase" />
 };
 
